@@ -154,7 +154,7 @@
                         android:textAppearance="@style/TextAppearance.Caption1"
                         android:textColor="@color/label_tertiary"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/tvHumidity"
+                        app:layout_constraintEnd_toStartOf="@+id/tvHumidityText"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvWindSpeed" />
@@ -175,7 +175,7 @@
                         app:layout_constraintTop_toBottomOf="@id/viewLine" />
 
                     <TextView
-                        android:id="@+id/tvHumidity"
+                        android:id="@+id/tvHumidityText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/extra_small_margin"
@@ -218,7 +218,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/tvHumidity"
+                        app:layout_constraintStart_toEndOf="@+id/tvHumidityText"
                         app:layout_constraintTop_toBottomOf="@id/tvChancePercent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -251,7 +251,7 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvWeatherDay"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/zero_dp"
                 android:layout_height="@dimen/zero_dp"
                 app:flow_horizontalAlign="center"
                 android:layout_margin="@dimen/small_margin"
